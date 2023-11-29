@@ -1,0 +1,439 @@
+
+*{
+    box-sizing: border-box;
+
+}
+body{
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.the-first-part{
+    background-color: white;
+    width: 100%;
+    padding: 5px 50px;
+}
+.the-first-part .the-head-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.the-first-part .the-head-container .the-nav{
+    display: flex;
+    margin-top: 17px;
+}
+.the-first-part .the-head-container .the-nav a{
+    margin-right: 25px;
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+}
+.the-first-part .the-head-container .the-nav i{
+    margin-left: 30px;
+}
+.the-product{
+    padding: 5px 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    margin-top: 40px;
+}
+.the-product .the-pic{
+    height: auto;
+    flex: 1 1 0;
+    width: 50%;
+}
+.the-product .the-second-part{
+    flex:1 1 0;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+.the-product .the-second-part .the-id-bar{
+    display: flex;
+    justify-content: flex-start;
+}
+.the-second-part .the-id-bar .word{
+    font-family: Manrope, sans-serif;
+    color: #333;
+    cursor: pointer;
+    line-height:1.5;
+    font-size: 0.875rem;
+    margin-right: 10px;
+    opacity: 0.8;
+}
+.the-product .the-second-part .the-id-bar i{
+    transform: rotate(90deg);
+    margin-right: 10px;
+}
+#op{
+    opacity: 0.5;
+}
+.the-product .the-second-part  .plant{
+    font-family: Manrope, sans-serif;
+    line-height: 1.5;
+    margin: 0px;
+}
+.the-product .the-second-part .the-line-divs{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+.the-product .the-second-part .the-line-divs .the-price{
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.4;
+    font-family: Manrope, sans-serif;
+    margin-left: 0px;
+}
+.the-product .the-second-part .the-line-divs .rating{
+    margin-top: 8px;
+    font-size: 0.875rem;
+    font-family: Manrope, sans-serif;
+    opacity: 0.7;
+}
+.the-product .the-second-part .the-line-divs .the-seperating-line{
+    height: 36.8px ;
+    width: 3px;
+    background-color: black;
+    border-radius: 30px;
+    margin: 0px 10px;
+}
+.product-header4_rating-wrapper{
+    display: flex;
+    color: #fdc826;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 8px ;
+}
+.product-header4_rating-wrapper svg{
+    margin-right:5px ;
+    size: 80%;
+}
+.the-product .the-second-part .the-margin{
+    width: 100%;
+    height: 40px;
+}
+.the-product .the-second-part .the-final-part{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.the-product .the-second-part .the-final-part .cart-and-count{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.the-product .the-second-part .the-final-part .cart-and-count .cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 80%;
+    cursor: pointer;
+}
+.the-product .the-second-part .the-final-part .cart-and-count .count{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2px ;
+    width: 15%;
+    border: 1px solid black;
+    align-items: center;
+}
+.the-product .the-second-part .the-final-part .cart-and-count .count .btns{
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    margin-left:10px;
+}
+.the-product .the-second-part .the-final-part .cart-and-count .count:hover .btns{
+    visibility: visible;
+}
+.the-product .the-second-part .the-final-part .cart-and-count .count .btns .rease{
+    font-size: 0.8rem;
+    padding:1px ;
+    margin: 2px;
+}
+.the-product .the-second-part .the-final-part .buy-now{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid black;
+    margin: 10px 0px;
+    padding: 10px;
+    cursor: pointer;
+}
+.the-product .the-second-part .the-final-part .the-sentence{
+    opacity: 0.5;
+    margin-top: 10px;
+}
+.the-shuffle-and-cards{
+    padding: 5px 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+.the-shuffle-and-cards .the-shuffle{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 0px 0px;
+}
+.the-shuffle-and-cards .the-shuffle .the-clicks{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px #c6c5c590 solid;
+    padding: 0px 0px;
+}
+.the-shuffle-and-cards .the-shuffle .the-clicks .details, .the-shuffle-and-cards .the-shuffle .the-clicks .care{
+    margin-right: 30px;
+    padding: 5px 0px;
+    line-height: 1.5;
+    transition: font-size 0.2s ease-out;
+    cursor: pointer;
+}
+.the-shuffle-and-cards .the-shuffle .the-clicks .details.clicked, .the-shuffle-and-cards .the-shuffle .the-clicks .care.clicked{
+    border-bottom: 2px solid black;
+    font-size: 1.1rem;
+}
+.the-shuffle-and-cards .the-shuffle .the-details{
+    line-height: 1.7;
+    font-size: 0.875rem;
+    font-weight: 300;
+    opacity: 0.5;
+    display: none;
+}
+.the-shuffle-and-cards .the-shuffle .the-details.show{
+    display: block;
+}
+.the-shuffle-and-cards .the-shuffle .the-care{
+    display:none ;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+.the-shuffle-and-cards .the-shuffle .the-care.show{
+    display: flex;
+}
+.the-shuffle-and-cards .the-shuffle .the-care .left-row,.the-shuffle-and-cards .the-shuffle .the-care .right-row{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    line-height: 2;
+    opacity: 0.7;
+    flex-wrap: nowrap;
+    margin-right: 10px;
+}
+.the-shuffle-and-cards .and-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 45%;
+}
+.the-shuffle-and-cards .and-cards .g-card{
+    margin: 20px 0px 10px;
+}
+.the-shuffle-and-cards .and-cards .g-card h4{
+    margin: 0px;
+}
+.the-shuffle-and-cards .and-cards .g-card .g-pre{
+    padding-top: 3px;
+    margin: 0px;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+.the-img-line img{
+    height: 150px;
+    width: 120%;
+    margin: 40px -80px;
+}
+.the-under-image{
+    padding: 5px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.the-under-image .the-left-side{
+    margin-top: 15px;
+    padding-top: 10px;
+}
+.the-under-image .the-left-side .fresh{
+    font-size: smaller;
+    font-weight: 300;
+}
+.the-under-image .the-left-side .the-left-lorem-para{
+    font-size: 2rem;
+    line-height: 1.5;
+    font-family: Manrope,sans-serif;
+    font-weight: 100;
+    margin: 10px 0px 10px;
+}
+.the-under-image .the-left-side .the-logo{
+    display: flex;
+    size: 80%;
+    align-items: center;
+    justify-content: flex-start;
+}
+.the-under-image .the-left-side .the-two-lines{
+    margin-left: 15px;
+}
+.the-under-image .the-right-side{
+    font-family: Manrope;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    opacity: 0.75;
+    font-weight:100;
+    margin-right: 30px;
+}
+.the-above-cards{
+    padding: 5px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.the-above-cards .the-paragr-div .main-head-line-here{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: Manrope,sans-serif;
+    font-weight: 100;
+    margin: 10px 0px 10px;
+}
+.the-above-cards .the-paragr-div .here-para{
+    line-height: 1.5;
+    font-family: Manrope,sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+    opacity: 0.6;
+}
+.the-above-cards .the-hanged-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px;
+    cursor: pointer;
+}
+.the-dwarf-cards{
+    padding: 5px 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+}
+.the-dwarf-cards .the-d-card{
+    width: 22.5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.the-dwarf-cards .the-d-card .a-card{
+    width: 100%;
+}
+.the-dwarf-cards .the-d-card a{
+    color: black;
+    text-decoration: none;
+} 
+.the-dwarf-cards .the-d-card .name{
+    font-family: Manrope, sans-serif;
+    font-size: medium;
+    font-weight: lighter;
+}
+.the-dwarf-cards .the-d-card .type{
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: lighter;
+}
+.the-dwarf-cards .the-d-card .price{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.the-final-cards{
+    width: 100%;
+    background-color: #fafafa;
+    display: flex;
+    padding: 30px 10px;
+    margin-top: 40px;
+}
+.the-final-cards .the-site{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+.the-final-cards .the-site .the-parag{
+    font-family: Manrope, sans-serif;
+    font-size: 1.5rem;
+}
+.the-final-cards .the-site .themail .mail{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid lightgray;
+}
+.the-final-cards .the-site .themail .mail:focus{
+    outline: 0px;
+    border-bottom: 1px solid black;
+}
+.the-final-cards .the-site .themail #Stay{
+    border: 0px;
+    background: transparent;
+}
+.the-final-cards .the-info-cards{
+    flex: 3 1 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.the-final-cards .the-info-cards a{
+    color: black;
+    text-decoration: none;
+    line-height: 1.5rem;
+}
+.the-final-cards .the-info-cards a .the-info{
+    font-family: Manrope, sans-serif;
+    font-weight: lighter;
+}
+.the-final-cards .the-info-cards .info-card-follow{
+    line-height: 2rem;
+}
+.the-page-bottom{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+.the-page-bottom .finally span{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.the-page-bottom .finally.the-last{
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.2;
+    font-size: 95%;
+    margin-right: 20px;
+}

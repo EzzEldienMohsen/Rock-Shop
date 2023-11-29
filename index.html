@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Manrope:wght@300&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <script src="code.jquery.com_jquery-3.7.0.js"></script>
+</head>
+<body id="first-ref">
+    <div class="the-first-part">
+        <div class="the-head-container">
+            <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b5e8e7da868fe4307206c9_habitat-logo.svg" alt="habitat">
+            <div class="the-nav">
+                <a href="#first-ref">Live Plants</a>
+                <a href="#first-ref">Live Fish</a>
+                <div class="the-splitter"></div>
+                <a href="#">Kits</a>
+                <a href="#first-ref">Tanks & Accessories</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+                <div class="icons-res">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-store"></i>
+                    <i class="fa-solid fa-list"></i>
+                </div>
+            </div>
+            <div class="the-x-eff">
+                <div class="the-upper-rod"></div>
+                <div class="the-lowe-rod"></div>
+            </div>
+        </div>
+        <div class="the-intro">
+            <h1>
+                Tank & Hardscape Accessories
+            </h1>
+            <p>
+                Quality hand-picked and unique freshwater
+                aquarium-friendly natural rocks, stones, and
+                wood of all different shapes and sizes, and textures.
+            </p>
+        </div>
+        <div class="the-sep-line">
+            <div class="thefilter" id="FilBtn">
+                <i class="fa-solid fa-arrow-down-wide-short"></i>
+                <span>Filter</span>
+            </div>
+            <div class="the-sec-nav">
+                <a href="#" id="bold">View All</a>
+                <a href="#">Rocks</a>
+                <a href="#">Wood</a>
+                <a href="#">Soil</a>
+                <a href="#">Tanks</a>
+            </div>
+            <div class="the-sort">
+                <div class="the-btn" id="btn">
+                    <div class="sort-by">Sort by</div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="the-nav-menu" id="navMenu">
+                    <a href="#">Most Popular</a>
+                    <a href="#">Most Recent</a>
+                    <a href="#">Name: A to Z</a>
+                    <a href="#">Name: Z to A</a>
+                    <a href="#">Price: Low to High</a>
+                    <a href="#">Price: High to Low</a>
+                </div>
+            </div>
+        </div>
+        <div class="the-filter-eff" id="filter">
+            <div class="container">
+                <div class="the-top-line">
+                    <div class="left">Search</div>
+                    <div class="the-top-right">clear</div>
+                </div>
+                <div class="the-bottom-line" id="search">
+                    <svg width="22.5" height="22.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.875 15.4554L20.875 19.4602C21.0536 19.6589 21.0448 19.9631 20.855 20.1511L20.155 20.8519C20.0611 20.9467 19.9333 21 19.8 21C19.6667 21 19.5389 20.9467 19.445 20.8519L15.445 16.8471C15.3344 16.7362 15.234 16.6156 15.145 16.4867L14.395 15.4855C13.1541 16.4776 11.613 17.0178 10.025 17.0173C6.75261 17.0287 3.90902 14.7686 3.17773 11.5751C2.44643 8.38161 4.0226 5.10699 6.9731 3.68991C9.92359 2.27284 13.461 3.09151 15.491 5.66125C17.521 8.23099 17.5019 11.866 15.445 14.4142L16.445 15.105C16.6012 15.2051 16.7454 15.3226 16.875 15.4554ZM5.025 10.0089C5.025 12.7736 7.26357 15.0149 10.025 15.0149C11.3511 15.0149 12.6229 14.4875 13.5605 13.5487C14.4982 12.6099 15.025 11.3366 15.025 10.0089C15.025 7.24412 12.7864 5.00285 10.025 5.00285C7.26357 5.00285 5.025 7.24412 5.025 10.0089Z" fill="CurrentColor"></path>
+                        </svg>
+                    <input type="text" placeholder="Keyword">
+                </div>
+            </div>
+            <div class="container" id="fir-con">
+                <div class="the-top-line">
+                    <div class="left">Type</div>
+                    <div class="the-top-right">clear</div>
+                </div>
+                <div class="the-bottom-line" id="fi-sec-btn">
+                    <span>Rocks</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="the-shared-list">
+                    <div class="choice">
+                        <input type="checkbox" id="F">
+                        <label for="F">Option One</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="S">
+                        <label for="S">Option Two</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="T">
+                        <label for="T">Option Three</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="FO">
+                        <label for="FO">Option Four</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="FI">
+                        <label for="FI">Option Five</label>
+                    </div>                   
+                </div>
+            </div>
+            <div class="container" id="sec-con">
+                <div class="the-top-line">
+                    <div class="left">Price</div>
+                    <div class="the-top-right">clear</div>
+                </div>
+                <div class="the-bottom-line" id="sec-sec-btn">
+                    <span>Under 25$</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="the-shared-list">
+                    <div class="choice">
+                        <input type="checkbox" id="F2">
+                        <label for="F2">Option One</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="S2">
+                        <label for="S2">Option Two</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="T2">
+                        <label for="T2">Option Three</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="FO2">
+                        <label for="FO2">Option Four</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="FI2">
+                        <label for="FI2">Option Five</label>
+                    </div>                   
+                </div>
+            </div>
+            <div class="container" id="thi-con">
+                <div class="the-top-line">
+                    <div class="left">Filter Four</div>
+                    <div class="the-top-right">clear</div>
+                </div>
+                <div class="the-bottom-line" id="thi-sec-btn">
+                    <span>Option One</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="the-shared-list">
+                    <div class="choice">
+                        <input type="checkbox" id="F3">
+                        <label for="F3">Option One</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="S3">
+                        <label for="S3">Option Two</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="T3">
+                        <label for="T3">Option Three</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="FO3">
+                        <label for="FO3">Option Four</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="FI3">
+                        <label for="FI3">Option Five</label>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+        <div class="the-card-container" id="the-card-container">
+            <div class="the-cards">
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b6312033f7202efdfa2102_hardscape-1.jpg" alt="rocks" class="card">
+                    <div class="name">Product name</div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img  src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201ffc4df17ea2bd54_hardscape-2.jpg" alt="rock" class="card">
+                    <div class="name">Product name</div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201000ff5564892ddb_hardscape-3.jpg" alt="Yrock" class="card">
+                    <div class="name">Product name</div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631202684815bd7f9439b_hardscape-4.jpg" alt="Root" class="card">
+                    <div class="name">Product name</div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120bbb02530b2aacd7c_hardscape-5.jpg" alt="Root" class="card">
+                    <div class="name">Product name</div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631209b6169e250e9377b_hardscape-6.jpg" alt="Bag" class="card">
+                    <div class="name">Product name</div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120e64009800d2e80fd_hardscape-8.jpg" alt="wr" class="card">
+                    <div class="name">Product name</div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120e64009800d2e80fd_hardscape-8.jpg" alt="rec" class="card">
+                    <div class="name">Dual Vital Purifying Cleanser </div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b6312033f7202efdfa2102_hardscape-1.jpg" alt="rocks" class="card">
+                    <div class="name">Product name</div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631202684815bd7f9439b_hardscape-4.jpg" alt="Root" class="card">
+                    <div class="name">Product name</div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201ffc4df17ea2bd54_hardscape-2.jpg" alt="rock" class="card">
+                    <div class="name">Product name</div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120bbb02530b2aacd7c_hardscape-5.jpg" alt="Root" class="card">
+                    <div class="name">Product name</div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120e64009800d2e80fd_hardscape-8.jpg" alt="yrock" class="card">
+                    <div class="name">Product name</div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201000ff5564892ddb_hardscape-3.jpg" alt="Yrock" class="card">
+                    <div class="name">Product name</div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631209b6169e250e9377b_hardscape-6.jpg" alt="Bag" class="card">
+                    <div class="name">Product name</div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120e64009800d2e80fd_hardscape-8.jpg" alt="rec" class="card">
+                    <div class="name">Dual Vital Purifying Cleanser</div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631202684815bd7f9439b_hardscape-4.jpg" alt="Root" class="card">
+                    <div class="name">Product name</div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120bbb02530b2aacd7c_hardscape-5.jpg" alt="Root" class="card">
+                    <div class="name">Product name</div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b6312033f7202efdfa2102_hardscape-1.jpg" alt="rocks" class="card">
+                    <div class="name">Product name</div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+                <div class="the-card"><a href="/the second page/index.html">
+                    <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201ffc4df17ea2bd54_hardscape-2.jpg" alt="rock" class="card">
+                    <div class="name">Product name</div>
+                    <div class="type">variant</div>
+                    <div class="price">$55</div></a>
+                </div>
+            </div>
+            <div class="more">
+                Load More...
+            </div>
+        </div>
+    </div>
+    <div class="the-final-cards">
+        <div class="the-site">
+            <img src="https://assets.website-files.com/62b5e26a99a06f072c51d127/62b5e8e7da868fe4307206c9_habitat-logo.svg" alt="habitat">
+            <p class="the-parag">
+                Join our newsletter for deals,
+                new drops and inspiration sent straight to your inbox.
+            </p>
+            <div class="themail">
+                <input type="email" id="mail" placeholder="Enter your email" class="mail">
+                <input type="submit" name="Stay Updated" id="Stay" value="Stay Updated">
+            </div>
+        </div>
+        <div class="the-info-cards">
+            <div class="info-card"><a href="#first-ref">
+                <h4 class="title">Shop</h4>
+                <div class="the-info">Shop Live Plants</div>
+                <div class="the-info">Shop Live Fish</div>
+                <div class="the-info">Shop Live Hardscape</div></a>
+            </div>
+            <div class="info-card"><a href="#">
+                <h4 class="title">Company</h4>
+                <div class="the-info">About Us</div>
+                <div class="the-info">Contact Us</div>
+                <div class="the-info">Careers</div></a>
+            </div>
+            <div class="info-card"><a href="#">
+                <h4 class="title">Address</h4>
+                <div class="the-info">123 Some St Name</div>
+                <div class="the-info">Tampa, FL USA</div>
+                <div class="the-info">33605</div></a>
+            </div>
+            <div class="info-card-follow">
+                <h4 class="title">Follow US</h4>
+                <div class="the-info">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                </div>
+                <div class="the-info">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </div>
+                <div class="the-info">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span>Twitter</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="the-page-bottom">
+        <div class="finally">© 2022 Habitat Scapes, LLC    </div>
+        <div class="finally">Crafted with <span>♥️</span> by <span>DesignComet</span></div>
+        <div class="finally the-last">
+            <span class="last">Privacy Policy</span>
+            <span class="last">Terms Of Service</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
